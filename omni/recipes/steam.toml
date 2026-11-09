@@ -1,0 +1,16 @@
+# Any Steam game (native or Proton): Omni reads the game's Steam id from the process.
+name = "Steam game"
+priority = 30
+
+[match]
+steam_appid = '.+'
+
+[activity]
+type = "playing"
+details = "{steam_name}"
+large_image = "https://cdn.cloudflare.steamstatic.com/steam/apps/{steam_appid}/header.jpg"
+large_text = "{steam_name}"
+
+[[buttons]]
+label = "View on Steam"
+url = "https://store.steampowered.com/app/{steam_appid}"

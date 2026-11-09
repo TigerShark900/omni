@@ -1,0 +1,13 @@
+name = "BricsCAD"
+default = "hidden"   # work stuff: off until you switch it on in Settings
+priority = 50
+
+[match]
+class = 'bricscad'
+title = '(?P<file>[^\\/\[\]]+\.(?:dwg|dxf))'
+
+[activity]
+type = "playing"
+details = "Drafting {file}"
+state = "in BricsCAD"
+large_image = "bricscad"

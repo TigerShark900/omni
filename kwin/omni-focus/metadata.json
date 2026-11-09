@@ -1,0 +1,12 @@
+{
+    "KPlugin": {
+        "Id": "omni-focus",
+        "Name": "Omni focus reporter",
+        "Description": "Tells the Omni Discord status app which window is focused.",
+        "Authors": [{ "Name": "Shark" }],
+        "Version": "1.0",
+        "License": "GPL"
+    },
+    "X-Plasma-API": "javascript",
+    "KPackageStructure": "KWin/Script"
+}

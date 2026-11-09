@@ -1,0 +1,12 @@
+# Window title looks like "Minecraft* 1.21.4 - Multiplayer (3rd-party Server)"
+name = "Minecraft"
+priority = 60
+
+[match]
+title = '^Minecraft\*?\s+(?P<version>[\d.]+)(?:\s+-\s+(?P<mode>.+))?'
+
+[activity]
+type = "playing"
+details = "Minecraft {version}"
+state = "{mode}"
+large_image = "minecraft"

@@ -1,0 +1,39 @@
+# Omni settings. After editing, use "Reload" in the tray menu or run: omni reload
+
+# Leave this out to use Omni's shared Discord app (works straight away, card header says "Omni").
+# For your own pictures, make an application at https://discord.com/developers/applications
+# and paste its "Application ID" here; its name becomes the card header.
+# client_id = ""
+
+# What the member list shows next to your name: "details" (e.g. "Drafting house.dwg"),
+# "state", or "name" (the Discord application's name).
+show = "details"
+
+fallback = false       # apps with no recipe show "Using <app name>" (off = games and fun stuff only)
+media = false          # show music/video that's playing
+media_priority = 40    # recipes above this beat media (games are 50+); the fallback (0) loses to media
+respect_native = true  # apps that set their own Discord status are left alone
+library = true         # fetch recipes for games you play from the online library (see README)
+# library_url = "https://raw.githubusercontent.com/TigerShark900/omni/main/library/"
+
+# default_image = "https://..."   # picture for apps that have none
+
+[privacy]
+# Never shown (regular expressions, matched against window class, process name and app name)
+blocklist = ["keepassxc", "kwalletmanager", "bitwarden", "1password", "seahorse"]
+# Media players that are never shown
+media_blocklist = []
+# Focusing these doesn't change your status (Discord, the desktop and KRunner are already included)
+ignore_focus = []
+
+# Per-app detail level: "full", "vague" (just "Using <app>") or "hidden".
+# The name can be the window class, process, app name or recipe name.
+# [apps.blender]
+# detail = "vague"
+
+# Pictures: by default app icons are saved to ~/Pictures/Omni icons for you to drag into your
+# Discord app's Art Assets (tray menu → "Add icons to Discord…"). To upload them to your own
+# server automatically instead, fill this in ({file} is the local PNG):
+# [icons]
+# base_url = "https://example.com/omni-icons/"
+# upload = ["rsync", "--chmod=F644", "{file}", "user@example.com:"]

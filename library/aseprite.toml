@@ -1,0 +1,13 @@
+name = "Aseprite"
+default = "hidden"   # work stuff: off until you switch it on in Settings
+priority = 50
+
+[match]
+class = 'aseprite'
+title = '(?P<file>[^\\/]+?\.(?:aseprite|ase|png|gif))'
+
+[activity]
+type = "playing"
+details = "Spriting {file}"
+state = "in Aseprite"
+large_image = "https://raw.githubusercontent.com/aseprite/aseprite/main/data/icons/ase256.png"

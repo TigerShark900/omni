@@ -1,0 +1,13 @@
+# ani-cli plays in mpv with a title like "Frieren Episode 14"
+name = "ani-cli"
+priority = 55
+
+[match]
+class = '^mpv$'
+title = '^(?P<show>.+?)\s*[Ee]pisode\s*(?P<episode>\d+)'
+
+[activity]
+type = "watching"
+details = "{show}"
+state = "Episode {episode}"
+large_image = "mpv"

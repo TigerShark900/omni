@@ -1,0 +1,14 @@
+# Claude Code running in Konsole
+name = "Claude Code"
+default = "hidden"   # work stuff: off until you switch it on in Settings
+priority = 40
+
+[match]
+class = 'konsole'
+title = '(?i)claude'
+
+[activity]
+type = "playing"
+details = "Coding with Claude"
+state = "in the terminal"
+large_image = "org_kde_konsole"

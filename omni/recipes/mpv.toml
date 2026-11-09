@@ -1,0 +1,12 @@
+name = "mpv"
+default = "hidden"   # work stuff: off until you switch it on in Settings
+priority = 45
+
+[match]
+class = '^mpv$'
+title = '^(?P<file>.+?)(?:\s+-\s+mpv)?$'
+
+[activity]
+type = "watching"
+details = "{file}"
+state = "in mpv"

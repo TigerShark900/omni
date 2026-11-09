@@ -1,0 +1,13 @@
+name = "Kdenlive"
+default = "hidden"   # work stuff: off until you switch it on in Settings
+priority = 50
+
+[match]
+class = 'kdenlive'
+title = '^(?P<project>[^/]+?)\.kdenlive'
+
+[activity]
+type = "playing"
+details = "Editing {project}"
+state = "in Kdenlive"
+large_image = "kdenlive"
